@@ -3,6 +3,8 @@
 
 [![codecov](https://codecov.io/gh/tetrau/try-github-actions/branch/master/graph/badge.svg)](https://codecov.io/gh/tetrau/try-github-actions)
 
+![unittest](https://github.com/tetrau/try-github-actions/workflows/unittest/badge.svg)
+
 # Acknowledgment
 | File                                | Attribution                                                                                                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
