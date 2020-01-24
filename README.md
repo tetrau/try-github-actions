@@ -1,6 +1,8 @@
 # integv
  A file integrity verifier based on the structure of file.
 
+[![codecov](https://codecov.io/gh/tetrau/try-github-actions/branch/master/graph/badge.svg)](https://codecov.io/gh/tetrau/try-github-actions)
+
 # Acknowledgment
 | File                                | Attribution                                                                                                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
