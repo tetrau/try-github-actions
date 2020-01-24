@@ -45,6 +45,7 @@ class TestVerifierAuto(TestCase):
         self.verifier = FileIntegrityVerifier()
 
     def _test_one_sample(self, sample_file):
+        print(sample_file)
         file_type = self.verifier.guess_type(sample_file)
         with open(sample_file, "rb") as f:
             sample = f.read()
