@@ -47,6 +47,7 @@ class TestVerifierAuto(TestCase):
     def _test_one_sample(self, sample_file):
         print(sample_file)
         file_type = self.verifier.guess_type(sample_file)
+        print(file_type)
         with open(sample_file, "rb") as f:
             sample = f.read()
         self.assertTrue(self.verifier.verify(sample_file))
