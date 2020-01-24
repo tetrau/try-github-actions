@@ -1,5 +1,6 @@
 from unittest import TestCase
 from io import BytesIO
+import os
 from tempfile import NamedTemporaryFile
 from integv._file import NormalizedFile
 
@@ -46,11 +47,12 @@ class TestByteIOFile(TestFile):
 class TestOnDiskFile(TestFile):
     def setUp(self):
         self.raw = b"0123456789" * 1234
-        self.file_on_disk = NamedTemporaryFile()
+        self.file_on_disk = NamedTemporaryFile(delete=False)
         self.file_on_disk.write(self.raw)
         self.file_on_disk.flush()
         self.file = NormalizedFile(self.file_on_disk.name)
 
     def tearDown(self):
         self.file_on_disk.close()
+        os.unlink(self.file_on_disk.name)
         self.file.close()
