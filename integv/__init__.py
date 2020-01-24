@@ -4,7 +4,7 @@ from ._base import _IntegrityVerifierBase
 import integv.video
 import integv.image
 
-_mimetypes.init([_os.path.join(_os.split(__file__)[0], "mime.types")])
+_mimetypes.init([_os.path.join(_os.path.split(__file__)[0], "mime.types")])
 
 
 class FileIntegrityVerifier(_IntegrityVerifierBase):
